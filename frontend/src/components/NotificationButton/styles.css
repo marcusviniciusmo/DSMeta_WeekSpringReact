@@ -1,0 +1,18 @@
+.dsmeta-red-btn {
+  --backgroundNotificationButton: #rgba(255, 107, 114, 0.1);
+  --borderNotificationButton: #FF6B72;
+
+  background: var(--backgroundNotificationButton);
+  border: 0.1rem solid var(--borderNotificationButton);
+  width: 4.5rem;
+  height: 4.5rem;
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.dsmeta-red-btn img {
+  width: 1.9rem;
+}
