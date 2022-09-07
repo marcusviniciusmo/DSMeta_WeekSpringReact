@@ -1,0 +1,33 @@
+header {
+  --backgroundHeaderFirstColor: #102347;
+  --backgroundHeaderSecondColor: #181818;
+  
+  background: linear-gradient(
+    180deg,
+    var(--backgroundHeaderFirstColor) 0%,
+    var(--backgroundHeaderSecondColor) 100%);
+  height: 22rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header .dsmeta-logo-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header .dsmeta-logo-container img {
+  width: 23.5rem;
+}
+
+header .dsmeta-logo-container h1 {
+  font-size: 2.4rem;
+  margin-top: 1.5rem;
+}
+
+header .dsmeta-logo-container p {
+  font-size: 1.4rem;
+  font-weight: 300;
+}

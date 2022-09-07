@@ -1,0 +1,105 @@
+div.dsmetaCard {
+  --backgroundCard: #283142;
+  --backgroundInput: #1B2531;
+  --backgroundHoverTd: #384459;
+  --backgroundTdOdd: #242C3B;
+  --borderInput: #384459;
+  --borderTBodyTr: #5F6E82;
+  --colorInput: #9AAABE;
+  --colorTBody: #CFCFCF;
+  --colorTHead: #E9E9E9;
+  --colorTitle: #676FFF;
+
+  background: var(--backgroundCard);
+  border-radius: 1rem;
+  padding: 3rem 1rem;
+}
+
+div.dsmetaCard .dsmetaSalesTitle {
+  color: var(--colorTitle);
+  font-size: 2.4rem;
+  margin-bottom: 2rem;
+}
+
+div.dsmetaCard div.dsmetaFormControlContainer {
+  margin-bottom: 1.6rem;
+  max-width: 30rem;
+}
+
+div.dsmetaCard input.dsmetaFormControl {
+  background: var(--backgroundInput);
+  color: var(--colorInput);
+  border: 0.1rem solid var(--borderInput);
+  font-size: 1.8rem;
+  border-radius: 0.5rem;
+  width: 100%;
+  height: 4.6rem;
+  padding: 0 2rem;
+}
+
+div.dsmetaCard table.dsmetaSalesTable {
+  width: 100%;
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+
+div.dsmetaCard table.dsmetaSalesTable thead {
+  color: var(--colorTHead);
+  font-size: 1.6rem;
+  font-weight: 700;
+  height: 5.5rem;
+}
+
+div.dsmetaCard table.dsmetaSalesTable tbody {
+  color: var(--colorTBody);
+  font-size: 1.4rem;
+  font-weight: 400;
+  text-align: center;
+}
+
+div.dsmetaCard table.dsmetaSalesTable tbody tr {
+  border-top: 0.1rem solid var(--borderTBodyTr);
+  height: 7.4rem;
+}
+
+div.dsmetaCard table.dsmetaSalesTable tbody tr:hover>td {
+  background: var(--backgroundHoverTd);
+}
+
+div.dsmetaCard table.dsmetaSalesTable tbody tr:nth-child(odd) {
+  background: var(--backgroundTdOdd);
+}
+
+div.dsmetaCard div.dsmetaRedBtnContainer {
+  display: flex;
+  justify-content: center;
+}
+
+div.dsmetaCard .show576,
+div.dsmetaCard .show992 {
+  display: none;
+}
+
+@media (min-width: 576px) {
+  div.dsmetaCard .show576 {
+    display: table-cell;
+  }
+
+  div.dsmetaCard {
+    padding: 35px;
+  }
+
+  div.dsmetaCard table.dsmetaSalesTable tbody {
+    font-size: 1.8rem;
+  }
+
+  div.dsmetaCard table.dsmetaSalesTable tbody tr {
+    height: 5.5rem;
+  }
+}
+
+@media (min-width: 992px) {
+  div.dsmetaCard .show992 {
+    display: table-cell;
+  }
+}
