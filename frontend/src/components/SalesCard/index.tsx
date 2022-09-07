@@ -1,3 +1,4 @@
+import DatePickerComponent from '../DatePicker';
 import NotificationButton from '../NotificationButton';
 import './styles.css';
 
@@ -8,11 +9,11 @@ function SalesCard() {
 
       <div>
         <div className="dsmetaFormControlContainer">
-          <input className="dsmetaFormControl" type="text" />
+          <DatePickerComponent />
         </div>
 
         <div className="dsmetaFormControlContainer">
-          <input className="dsmetaFormControl" type="text" />
+          <DatePickerComponent />
         </div>
       </div>
 
