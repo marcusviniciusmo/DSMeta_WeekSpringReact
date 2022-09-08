@@ -1,11 +1,16 @@
 import DatePicker from 'react-datepicker';
 import "react-datepicker/dist/react-datepicker.css";
 
-function DatePickerComponent() {
+type Props = {
+  dateSelected: Date;
+  setDate: Function;
+};
+
+function DatePickerComponent({ dateSelected, setDate }: Props) {
   return (
     <DatePicker
-      selected={new Date()}
-      onChange={(date: Date) => {}}
+      selected={dateSelected}
+      onChange={(date: Date) => setDate(date)}
       className='dsmetaFormControl'
       dateFormat='dd/MM/yyyy'
     />
