@@ -10,7 +10,7 @@ function Header() {
         <h1>DSMeta</h1>
 
         <p>
-          Desenvolvido por
+          Desenvolvido por &nbsp;
           <a href="https://www.linkedin.com/in/marcus-viniciusmo/" target={'_blank'}>
             Marcus Mattioli
           </a>
